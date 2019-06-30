@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Committee-Microservices", "Committee-Microservices\Committee-Microservices.csproj", "{AEA12776-84FB-4982-BD2A-8F2EB0316555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCaseCommittee-Microservices", "UnitTestCaseCommittee-Microservices\UnitTestCaseCommittee-Microservices.csproj", "{C758EF9D-82D7-4D97-B29A-0347364BE9F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EDA3232-7BE6-47F9-8691-BED94762C01D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.integration.yml = docker-compose.integration.yml
+		Dockerfile.Integration = Dockerfile.Integration
+		Dockerfile.txt = Dockerfile.txt
+		Jenkinsfile.txt = Jenkinsfile.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Committee-Microservices-Integration", "Committee-Microservices-Integration\Committee-Microservices-Integration.csproj", "{6941368E-8ADE-47CF-909D-66BDD274ECEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEA12776-84FB-4982-BD2A-8F2EB0316555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA12776-84FB-4982-BD2A-8F2EB0316555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA12776-84FB-4982-BD2A-8F2EB0316555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA12776-84FB-4982-BD2A-8F2EB0316555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C758EF9D-82D7-4D97-B29A-0347364BE9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C758EF9D-82D7-4D97-B29A-0347364BE9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C758EF9D-82D7-4D97-B29A-0347364BE9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C758EF9D-82D7-4D97-B29A-0347364BE9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6941368E-8ADE-47CF-909D-66BDD274ECEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6941368E-8ADE-47CF-909D-66BDD274ECEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6941368E-8ADE-47CF-909D-66BDD274ECEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6941368E-8ADE-47CF-909D-66BDD274ECEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E308D1C3-16E1-47BB-94E7-82DF888DAF59}
+	EndGlobalSection
+EndGlobal

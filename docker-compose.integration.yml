@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:  
+  committeemicroservice:  
+    image: "committeemicroservices:B${BUILD_NUMBER}"
+    build:
+      context: .
+  integration:
+    depends_on:
+      - committeemicroservices
+    image: "committeemicroservices:test-B${BUILD_NUMBER}"
+    build:
+      context: .
+      dockerfile: Dockerfile.Integration
+    environment:
+      - TEAMCITY_PROJECT_NAME
+volumes:
+    dbdata:
