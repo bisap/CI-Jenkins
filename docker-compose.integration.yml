@@ -7,7 +7,7 @@ services:
       context: .
   integration:
     depends_on:
-      - committeemicroservices
+      - committeemicroservice
     image: "committeemicroservices:test-B${BUILD_NUMBER}"
     build:
       context: .
