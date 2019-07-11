@@ -10,9 +10,7 @@ services:
       - committeemicroservice
     image: "committeemicroservices:test-B${BUILD_NUMBER}"
     build:
-      context: .
-      dockerfile: Dockerfile.Integration
-    environment:
-      - TEAMCITY_PROJECT_NAME
+      context: .     
+      
 volumes:
     dbdata:
