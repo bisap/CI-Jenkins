@@ -14,14 +14,12 @@ RUN dotnet test --verbosity=normal --results-directory /TestResults/ --logger "t
 
 RUN dotnet publish ./Committee-Microservices/Committee-Microservices.csproj -o /publish/
 
-FROM microsoft/aspnetcore
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 
 WORKDIR /publish
 
 COPY --from=build-image /publish .
 
 COPY --from=build-image /TestResults /TestResults
-
-ENV TEAMCITY_PROJECT_NAME = ${TEAMCITY_PROJECT_NAME}
 
 ENTRYPOINT ["dotnet", "committee-microservices.dll"]
